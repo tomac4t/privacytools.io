@@ -30,7 +30,7 @@ index.html:64: (po4a::xml)
     - file-sharing.html
     - file-sync.html
     - fourteen-eyes.html
-    - header.html
+    - ~header.html~
     - hosting-provider.html
     - instant-messenger.html
     - key-disclosure-law.html
@@ -44,7 +44,7 @@ index.html:64: (po4a::xml)
     - privacy-resources.html
     - productivity-tools.html
     - quotes.html
-    - resources.html
+    - ~resources.html~
     - router-firmware.html
     - search-engines.html
     - self-contained-networks.html
