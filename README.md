@@ -11,8 +11,8 @@ index.html:64: (po4a::xml)
 ```
 
 ### Pages need to be translated
-- index.html
-- 404.html
+- ~index.html~
+- ~404.html~
 - _includes
   - sections
     - android-addons.html
