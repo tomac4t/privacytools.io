@@ -16,7 +16,7 @@ index.html:64: (po4a::xml)
 1. Run `bundle install` to install the required dependencies.
 1. Use `bundle exec jekyll build` to build the website. The output can be found in the `_site` directory.  Live preview is also possible by running `bundle exec jekyll serve`
 
-## Using relative path
+## Using the relative path
 ```
 cd _site
 sed -i s/'href="\/'/'href=".\/'/g `find -mindepth 1 -maxdepth 1 -name "*.html"`
@@ -27,7 +27,7 @@ sed -i s/'src="\/'/'src="..\/'/g `find -mindepth 2 -maxdepth 2 -name "*.html"`
 sed -i s/'src="\/'/'src="..\/..\/'/g `find -mindepth 3 -maxdepth 3 -name "*.html"`
 ```
 
-## Clone generated pages only
+## Clone the generated pages only
 ```
 git clone -b pages --single-branch https://github.com/tomac4t/privacytools-zh.git
 ```
