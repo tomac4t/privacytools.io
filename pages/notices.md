@@ -1,12 +1,12 @@
 ---
 layout: page
 permalink: /notices/
-title: "Notices and Disclaimers"
-description: "PrivacyTools is provided with good intentions on an &quot;as-is&quot; basis, without warranty, and disclaiming liability for damages."
+title: "告示和免责申明"
+description: "PrivacyTools 以善意依原样提供服务，不含担保，不承担损害责任。"
 ---
 
-<span class="badge badge-secondary mt-5">Section 1</span>
-# Legal Disclaimer
+<span class="badge badge-secondary mt-5">第一节</span>
+# 法律免责声明
 
 <span class="lead">PrivacyTools is not a law firm. As such, the PrivacyTools website and contributors are not providing legal advice. The material and recommendations in our website and guides do not constitute legal advice nor does contributing to the website or communicating with PrivacyTools or other contributors about our website create an attorney-client relationship.</span>
 
@@ -16,8 +16,8 @@ PrivacyTools is an open source project contributed to under licenses that includ
 
 PrivacyTools additionally does not warrant that this website will be constantly available, or available at all.
 
-<span class="badge badge-secondary mt-5">Section 2</span>
-# Licenses
+<span class="badge badge-secondary mt-5">第二节</span>
+# 许可证
 
 <span class="lead">Content copyright on this website is waived under the terms of [CC0 1.0 Universal](https://github.com/privacytoolsIO/privacytools.io/blob/master/LICENSE.txt).</span>
 
@@ -42,8 +42,8 @@ We believe that the logos and other images in `assets` from third-party provider
 
 When you contribute to this repository you are doing so under the above licenses.
 
-<span class="badge badge-secondary mt-5">Section 3</span>
-# Acceptable Use
+<span class="badge badge-secondary mt-5">第三节</span>
+# 可接受使用
 
 <span class="lead">You may not use this website in any way that causes or may cause damage to the website or impairment of the availability or accessibility of PrivacyTools, or in any way which is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.</span>
 

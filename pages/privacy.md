@@ -1,15 +1,15 @@
 ---
 layout: page
 permalink: /privacy/
-title: "Privacy Q&amp;A"
-description: "This Privacy Statement explains what information PrivacyTools and its related entities collect about its users, what we do with that information, and how we handle the content you place in our products and services."
+title: "隐私申明"
+description: "本隐私申明解释了 PrivacyTools 及其相关实体收集其用户什么信息，我们如何处理这些信息以及您在我们产品和服务留下的内容。"
 ---
 
-## Who is {{ site.name }}?
+## {{ site.name }} 是谁?
 
 {{ site.name }} is an unincorporated community developing this website and a number of privacy-friendly services. The current list of public team members [can be found on GitHub](https://github.com/orgs/privacytoolsIO/people). In order to operate these services, {{ site.name }} receives hosting and administration services from Aragon Ventures LLC.
 
-## How does {{ site.name }} collect data about me?
+## {{ site.name }} 如何收集我的数据?
 
 We collect data:
 
@@ -19,9 +19,9 @@ We collect data:
 
 This data will be collected regardless of browser, device, or app used to access our services. We do not buy or otherwise receive data from data brokers.
 
-## What data do you collect and why?
+## 你们收集了哪些数据和原因？
 
-### We collect data about visits to our websites.
+### 我们收集了网站的浏览数据。
 
 When you visit a {{ site.name }} website or service, regardless of whether you have an account or not, the website may use cookies, server logs, and other methods to collect the following data:
 
@@ -47,7 +47,7 @@ You can opt out of some website tracking we do with Matomo using the form below.
 
 <iframe style="border: 1; height: 120px; width: 100%;" src="https://stats.privacytools.io/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=ffffff&fontColor=212529&fontSize=1rem&fontFamily=-apple-system%2CBlinkMacSystemFont%2C%22Segoe%20UI%22%2CRoboto%2C%22Helvetica%20Neue%22%2CArial%2Csans-serif%2C%22Apple%20Color%20Emoji%22%2C%22Segoe%20UI%20Emoji%22%2C%22Segoe%20UI%20Symbol%22%2C%22Noto%20Color%20Emoji%22"></iframe>
 
-### We collect account data.
+### 我们收集帐号数据。
 
 On some websites and services we provide, many features may require an account. For example, on forum.privacytools.io an account is required to post and reply to topics.
 
@@ -66,21 +66,21 @@ On some websites and services you may provide additional information for your ac
 
 We will store your account data as long as your account remains open. After closing an account, we may retain some or all of your account data in the form of backups or archives for up to 90 days.
 
-## Who is my data shared with?
+## 我的数据会与谁分享？
 
 When you use services provided by {{ site.name }} your data is shared with Aragon Ventures LLC, in order to facilitate their hosting obligations. Aragon Ventures LLC may collect and use your data as described in their privacy statement at [https://aragon.ventures/privacy](https://aragon.ventures/privacy/).
 
 Your account data, posts, and other activities on {{ site.name }} services is shared with others as mentioned in the section about account data.
 
-## Where is my data stored?
+## 我的数据储存在哪里？
 
 Your data is stored on servers provided by Aragon Ventures LLC, a company incorporated in Minnesota, United States. The primary datacenter for {{ site.name }} is located in France. Some websites, services, or backups may reside in datacenters in multiple jurisdictions, including the United States and the European Union.
 
-## Is {{ site.name }} GDPR compliant?
+## {{ site.name }} 与 GDPR 兼容吗？
 
 We respect privacy rights under [Regulation (EU) 2016/679](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG), the European Union’s General Data Protection Regulation (GDPR). Information that GDPR requires us to give can be found throughout this document.
 
-## What are my data protection rights?
+## 什么是我的数据保护权？
 
 We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
 
@@ -91,7 +91,7 @@ We would like to make sure you are fully aware of all of your data protection ri
 * **The right to object to processing** – You have the right to object to our processing of your personal data, under certain conditions.
 * **The right to data portability** – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
 
-## How can I contact the {{ site.name }} team about privacy?
+## 涉及隐私问题，我该如何联系 {{ site.name }} 团队？
 
 The {{ site.name }} team generally does not have access to personal data outside of limited access granted via some moderation panels. Inquiries regarding your personal information should be sent directly to the data controller for these services, Aragon Ventures LLC:
 
@@ -114,7 +114,7 @@ For all other inquiries, you can contact the team via methods described on our [
 
 For complaints under GDPR more generally, European Union users may lodge complaints with their local data protection supervisory authorities.
 
-## How can I find out about changes to this document?
+## 我如何查看本文档的变更？
 
 This version of our privacy statement took effect October 9th, 2019.
 
