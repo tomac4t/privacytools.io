@@ -2,8 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a2937f58-242a-4652-a46e-5e54b57b7fd7/deploy-status)](https://app.netlify.com/sites/privacytools-zhs/deploys)
 
-### The problem of po4a
-
+## The problem of po4a
 [po4a](https://github.com/mquinson/po4a) is a great tool to manage the origin text and the translation. It support the `xhtml` format. In my experience, it doesn't support HTML5 properly, so I have to give up:
 ```
 $ po4a-gettextize -f xhtml -m index.html -p test.pot -M UTF-8
@@ -12,7 +11,23 @@ index.html:64: (po4a::xml)
                wrong.
 ```
 
-### Pages need to be translated
+## Using relative path
+```
+cd _site
+sed -i s/'href="\/'/'href=".\/'/g `find -mindepth 1 -maxdepth 1 -name "*.html"`
+sed -i s/'href="\/'/'href="..\/'/g `find -mindepth 2 -maxdepth 2 -name "*.html"`
+sed -i s/'href="\/'/'href="..\/..\/'/g `find -mindepth 3 -maxdepth 3 -name "*.html"`
+sed -i s/'src="\/'/'src=".\/'/g `find -mindepth 1 -maxdepth 1 -name "*.html"`
+sed -i s/'src="\/'/'src="..\/'/g `find -mindepth 2 -maxdepth 2 -name "*.html"`
+sed -i s/'src="\/'/'src="..\/..\/'/g `find -mindepth 3 -maxdepth 3 -name "*.html"`
+```
+
+## Clone generated pages only
+```
+git clone -b pages --single-branch https://github.com/tomac4t/privacytools-zh.git
+```
+
+## Pages need to be translated
 - ~index.html~
 - ~404.html~
 - _includes
