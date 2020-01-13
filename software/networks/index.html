@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption">
+  <meta name="description" content="If you are currently browsing clearnet and want to access the dark web, this section is for you.">
+  <link rel="canonical" href="https://www.privacytools.io/software/networks/">
+
+  <!-- title -->
+  
+  <title>Self-Contained Networks | PrivacyTools</title>
+  <meta property="og:title" content="Self-Contained Networks | PrivacyTools" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/software/networks/" />
+  <meta property="og:image" content="https://www.privacytools.io/assets/img/svg/layout/brand/square-transparent.svg" />
+  <meta property="og:description" content="If you are currently browsing clearnet and want to access the dark web, this section is for you."/>
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="PrivacyTools" />
+
+  
+
+  <!-- icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/png/favicons/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/png/favicons/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/png/favicons/favicon-16x16.png?v=2">
+  <link rel="manifest" href="/assets/img/png/favicons/site.webmanifest?v=2">
+  <link rel="mask-icon" href="/assets/img/png/favicons/safari-pinned-tab.svg?v=2" color="#3498db">
+  <link rel="shortcut icon" href="/assets/img/png/favicons/favicon.ico?v=2">
+  <meta name="msapplication-TileColor" content="#3498db">
+  <meta name="msapplication-config" content="/assets/img/png/favicons/browserconfig.xml?v=2">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- CSS stylesheets -->
+  <link href="/assets/css/style.css?v=9" rel="stylesheet">
+  <link id="dark-css" href="/assets/css/dark.css?v=4" rel="stylesheet" media="(prefers-color-scheme: dark)">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <script src="/assets/js/applytheme.js?v=1"></script>
+  <header>
+  <nav class="fixed-top bg-dark">
+  <div id="navbar" class="d-flex flex-wrap justify-content-between align-items-center">
+    <div class="w-50">
+      <a id="nav-home-mobile" class="nav-anchor" href="/index.html">
+        <img src="/assets/img/svg/layout/brand/horizontal.svg" width="150px" />
+      </a>
+    </div>
+    <input type="checkbox" id="nav-toggle" checked />
+    <label for="nav-toggle" id="nav-toggle-label" class="fas fa-bars fa-lg"></label>
+
+    <div class="menu w-100">
+      <div id="nav-left" class="position-relative flex-col">
+        <a class="nav-anchor" href="/index.html">
+          <span id="nav-home" class="fas fa-home fa-fw"></span>
+        </a>
+
+        <!-- Provider -->
+        <details class="nav-details">
+          <summary>
+            <span class="nav-summary">
+              提供商
+              <span class="dropdown-toggle"></span>
+            </span>
+          </summary>
+          <span class="nav-dropdown">
+            <a class="dropdown-item" href="/providers/#ukusa"><span class="fas fa-user-secret fa-fw"></span> 避免美国英国服务</a>
+            <a class="dropdown-item" href="/providers/cloud-storage/"><span class="fas fa-cloud fa-fw"></span> 云储存</a>
+            <a class="dropdown-item" href="/providers/dns/"><span class="fa fa-tasks fa-fw"></span> DNS</a>
+            <a class="dropdown-item" href="/providers/email/"><span class="fas fa-mail-bulk fa-fw"></span> 电子邮箱</a>
+            <a class="dropdown-item" href="/providers/hosting/"><span class="fas fa-database fa-fw"></span> 网站托管</a>
+            <a class="dropdown-item" href="/providers/paste/"><span class="fas fa-paste fa-fw"></span> Pastebins</a>
+            <a class="dropdown-item" href="/providers/search-engines/"><span class="fas fa-search fa-fw"></span> 搜索引擎</a>
+            <a class="dropdown-item" href="/providers/social-networks/"><span class="fas fa-expand-arrows-alt fa-fw"></span> 社交网站</a>
+            <a class="dropdown-item" href="/providers/social-news-aggregator/"><span class="far fa-newspaper fa-fw"></span> 新闻聚合器</a>
+            <a class="dropdown-item" href="/providers/vpn/"><span class="far fa-eye-slash fa-fw"></span> VPN</a>
+          </span>
+        </details>
+
+        <!-- Browser -->
+        <details class="nav-details">
+          <summary>
+            <span class="nav-summary">
+              浏览器
+              <span class="dropdown-toggle"></span>
+            </span>
+          </summary>
+          <span class="nav-dropdown">
+            <a class="dropdown-item" href="/browsers/#browser"><span class="fas fa-check fa-fw"></span> 推荐</a>
+            <a class="dropdown-item" href="/browsers/#fingerprint"><span class="fas fa-fingerprint fa-fw"></span> 指纹信息</a>
+            <a class="dropdown-item" href="/browsers/#webrtc"><span class="far fa-eye fa-fw"></span> WebRTC IP 泄漏</a>
+            <a class="dropdown-item" href="/browsers/#addons"><span class="far fa-list-alt fa-fw"></span> 浏览器扩展</a>
+            <a class="dropdown-item" href="/browsers/#about_config"><span class="fas fa-wrench fa-fw"></span> 火狐技巧</a>
+          </span>
+        </details>
+
+        <!-- Software -->
+        <details class="nav-details">
+          <summary>
+            <span class="nav-summary">
+              软件
+              <span class="dropdown-toggle"></span>
+            </span>
+          </summary>
+          <span class="nav-dropdown">
+            <a class="dropdown-item" href="/software/calendar-contacts/"><span class="fas fa-calendar fa-fw"></span> 日历/联系人同步工具</a>
+            <a class="dropdown-item" href="/software/notebooks/"><span class="far fa-sticky-note fa-fw"></span> 数字笔记</a>
+            <a class="dropdown-item" href="/software/email/"><span class="fas fa-envelope fa-fw"></span> 电子邮件客户端</a>
+            <a class="dropdown-item" href="/software/encryption-tools/"><span class="fas fa-lock fa-fw"></span> 文件加密</a>
+            <a class="dropdown-item" href="/software/file-sharing/"><span class="fas fa-file-export fa-fw"></span> 文件分享</a>
+            <a class="dropdown-item" href="/software/file-sync/"><span class="fas fa-copy fa-fw"></span> 文件同步</a>
+            <a class="dropdown-item" href="/software/productivity/#metadata-removal-tools"><span class="far fa-eye-slash fa-fw"></span> 元数据删除工具</a>
+            <a class="dropdown-item" href="/software/passwords/"><span class="fas fa-user-lock fa-fw"></span> 密码管理器</a>
+            <a class="dropdown-item" href="/software/productivity/"><span class="fas fa-briefcase fa-fw"></span> 生产力工具</a>
+            <a class="dropdown-item" href="/software/real-time-communication/"><span class="fas fa-comments fa-fw"></span> 实时通讯</a>
+            <a class="dropdown-item" href="/software/networks/"><span class="fas fa-user-secret fa-fw"></span> 私有网络</a>
+            <a class="dropdown-item" href="/software/cloud/"><span class="fas fa-hdd fa-fw"></span> 自托管云服务</a>
+          </span>
+        </details>
+
+        <!-- OS -->
+        <details class="nav-details">
+          <summary>
+            <span class="nav-summary">
+              操作系统
+              <span class="dropdown-toggle"></span>
+            </span>
+          </summary>
+          <span class="nav-dropdown">
+            <a class="dropdown-item" href="/operating-systems/#os"><span class="fas fa-th-large fa-fw"></span> PC 系统</a>
+            <a class="dropdown-item" href="/operating-systems/#live_os"><span class="fas fa-compact-disc fa-fw"></span> PC Live 系统</a>
+            <a class="dropdown-item" href="/operating-systems/#mobile_os"><span class="fas fa-mobile-alt fa-fw"></span> 手机系统</a>
+            <a class="dropdown-item" href="/operating-systems/#aaddons"><span class="fas fa-th fa-fw"></span> 安卓隐私扩展</a>
+            <a class="dropdown-item" href="/operating-systems/#firmware"><span class="fas fa-signal fa-fw"></span> 路由器固件</a>
+            <a class="dropdown-item" href="/operating-systems/#win10"><span class="far fa-thumbs-down fa-fw"></span> 不要使用 Windows 10</a>
+          </span>
+        </details>
+
+        <a class="nav-anchor" href="/index.html#participate">参与</a>
+      </div>
+
+      <!-- Language -->
+      <div id="nav-right">
+
+        <a href="/services/" class="nav-anchor">
+          服务
+        </a>
+        <a href="https://blog.privacytools.io/" class="nav-anchor">
+          博客
+        </a>
+        <a href="/sponsors/" class="nav-anchor">
+          赞助者
+        </a>
+        <a href="/about/" class="nav-anchor">
+          关于我们
+        </a>
+        <span id="nav-switch-theme" class="nav-anchor">
+          <span class="nav-theme-icon fas fa-fw" aria-hidden="true" title="Theme"></span>
+          <span class="sr-only">切换主题</span>
+        </span>
+
+        <details class="nav-details">
+          <summary>
+            <span class="nav-summary">
+              <span class="fas fa-language text-danger fa-fw" aria-hidden="true" title="Language"></span>
+              <span class="sr-only">语言选择</span>
+              <span class="dropdown-toggle"></span>
+            </span>
+          </summary>
+          <span class="nav-dropdown">
+            <a href="https://www.privacytools.io/" class="dropdown-item">English</a>
+            <a href="https://privacytools.twngo.xyz/" rel="nofollow noopener" class="dropdown-item">繁體中文</a>
+            <a href="https://victorhck.gitlab.io/privacytools-es/" rel="nofollow noopener" class="dropdown-item">Español</a>
+            <a href="https://pl.privacytools.io/" rel="nofollow noopener" class="dropdown-item">Polski</a>
+            <a href="https://www.privacidade.digital/" rel="nofollow noopener" class="dropdown-item">Português</a>
+            <a href="https://privacytools.it-sec.rocks/" rel="nofollow noopener" class="dropdown-item">Deutsch</a>
+            <a href="https://privacytools-it.github.io/" rel="nofollow noopener" class="dropdown-item">Italiano</a>
+            <a href="https://privacytools.ru" rel="nofollow noopener" class="dropdown-item">Русский</a>
+            <a href="https://privacytools.dreads-unlock.fr" rel="nofollow noopener" class="dropdown-item">Français</a>
+          </span>
+        </details>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div id="top" class="py-4"></div>
+  </header>
+  <div class="container" role="main">
+  <main>
+  <nav id="breadcrumb" aria-label="breadcrumb">
+  
+  <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumb-item">
+      <a href="/"><i class="fas fa-home" aria-hidden="true"></i> <span>Home</span></a>
+    </li>
+    
+    
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/software/" itemprop="item"><span itemprop="name">Software</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    
+    
+    
+    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <link href="/software/networks/" itemprop="item"  />
+      <span itemprop="name">Networks 
+      </span>
+      <meta itemprop="position" content="2" />
+    </li>
+    
+    
+  </ol>
+</nav>
+
+
+<div class="jumbotron p-5">
+  <h1 class="display-4">Self-Contained Networks</h1>
+  
+</div>
+
+<h1 id="darknets" class="anchor"><a href="#darknets"><i class="fas fa-link anchor-icon"></i></a> Self-contained Networks</h1>
+
+<div class="alert alert-warning" role="alert">
+  <strong>If you are currently browsing <a href="https://en.wikipedia.org/wiki/Surface_Web">clearnet</a> and want to access the <a href="https://en.wikipedia.org/wiki/Dark_web">dark web</a>, this section is for you.</strong>
+</div>
+
+<div class="card">
+  <div class="card-header text-white bg-secondary">
+    <h3 class="h5">
+      
+        Tor
+      
+    </h3>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <img
+        src="/assets/img/svg/3rd-party/tor.svg"
+        
+        height="120"
+        width="120"
+        class="panel-pic"
+        alt="Tor logo"
+      >
+      The Tor network is a group of volunteer-operated servers that allows people to improve their privacy and security on the Internet. Tor's users employ this network by connecting through a series of virtual tunnels rather than making a direct connection, thus allowing both organizations and individuals to share information over public networks without compromising their privacy. Tor is an effective censorship circumvention tool.
+      
+    </p>
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center">
+      <div class="d-flex flex-shrink-0 mr-1">
+        <a
+          href="https://www.torproject.org/"
+          rel="noopener"
+          class="btn btn-primary mt-1 mr-1">
+          <i class="fas fa-external-link-alt fa-fw"></i>
+          Website
+        </a>
+        
+          <a
+            href="https://forum.privacytools.io/t/discussion-tor/1589"
+            rel="noopener"
+            class="btn btn-success mt-1 mr-1">
+            <i class="fab fa-discourse fa-fw"></i>
+            Forum
+          </a>
+        
+        
+          <a
+            href="http://expyuzz4wqqyqhjn.onion"
+            rel="noopener"
+            class="hover-text-decoration-none mt-1 mr-1"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            data-original-title="Requires specific software to access: torproject.org">
+            <span class="ptio-tor btn-tor btn-icon"></span>
+          </a>
+        
+        
+      </div>
+
+      <div class="mt-2">
+          
+            
+              <a href="https://www.torproject.org/download/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-windows fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://www.torproject.org/download/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-macos fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://www.torproject.org/download/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-linux fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://www.freshports.org/security/tor" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-freebsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="http://openports.se/net/tor" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-openbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="http://pkgsrc.se/net/tor" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-netbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            
+              <a href="https://support.torproject.org/tormobile/tormobile-7/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-f-droid fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-google-play fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://www.torproject.org/download/#android" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-android fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+
+          
+            <a href="https://gitweb.torproject.org/tor.git" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+              <i class="fab fa-git-square fa-2x fa-fw d-inline"></i>
+            </a>
+          
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<div class="card">
+  <div class="card-header text-white bg-secondary">
+    <h3 class="h5">
+      
+        I2P Anonymous Network
+      
+    </h3>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <img
+        src="/assets/img/svg/3rd-party/i2p.svg"
+        
+        data-theme-src="/assets/img/svg/3rd-party/i2p-dark.svg"
+        
+        height="120"
+        width="120"
+        class="panel-pic"
+        alt="I2P Anonymous Network logo"
+      >
+      The Invisible Internet Project (I2P) is a computer network layer that allows applications to send messages to each other pseudonymously and securely. Uses include anonymous Web surfing, chatting, blogging, and file transfers. The software that implements this layer is called an I2P router and a computer running I2P is called an I2P node. The software is free and open-source and is published under multiple licenses.
+      
+    </p>
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center">
+      <div class="d-flex flex-shrink-0 mr-1">
+        <a
+          href="https://geti2p.net/"
+          rel="noopener"
+          class="btn btn-primary mt-1 mr-1">
+          <i class="fas fa-external-link-alt fa-fw"></i>
+          Website
+        </a>
+        
+          <a
+            href="https://forum.privacytools.io/t/discussion-i2p/1590"
+            rel="noopener"
+            class="btn btn-success mt-1 mr-1">
+            <i class="fab fa-discourse fa-fw"></i>
+            Forum
+          </a>
+        
+        
+        
+          <a
+            href="http://i2p-projekt.i2p/"
+            rel="noopener"
+            class="hover-text-decoration-none mt-1 mr-1"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            data-original-title="Requires specific software to access: geti2p.net">
+            <span class="ptio-i2p-garlic btn-secondary btn-icon"></span>
+          </a>
+        
+      </div>
+
+      <div class="mt-2">
+          
+            
+              <a href="https://geti2p.net/en/download#windows" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-windows fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://geti2p.net/en/download#mac" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-macos fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://geti2p.net/en/download#unix" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-linux fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://www.freshports.org/security/i2p/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-freebsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="http://openports.se/net/i2pd" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-openbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="http://pkgsrc.se/wip/i2pd" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-netbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            
+              <a href="https://f-droid.org/app/net.i2p.android.router" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-f-droid fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://play.google.com/store/apps/details?id=net.i2p.android" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-google-play fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://download.i2p2.de/android/current/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-android fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+
+          
+
+          
+            <a href="https://geti2p.net/en/get-involved/guides/new-developers#getting-the-i2p-code" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+              <i class="fas fa-code-branch fa-2x fa-fw d-inline"></i>
+            </a>
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<div class="card">
+  <div class="card-header text-white bg-secondary">
+    <h3 class="h5">
+      
+        The Freenet Project
+      
+    </h3>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <img
+        src="/assets/img/svg/3rd-party/freenet.svg"
+        
+        height="120"
+        width="120"
+        class="panel-pic"
+        alt="The Freenet Project logo"
+      >
+      Freenet is a peer-to-peer platform for censorship-resistant communication. It uses a decentralized distributed data store to keep and deliver information, and has a suite of free software for publishing and communicating on the Web without fear of censorship. Both Freenet and some of its associated tools were originally designed by Ian Clarke, who defined Freenet's goal as providing freedom of speech on the Internet with strong anonymity protection.
+      
+    </p>
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center">
+      <div class="d-flex flex-shrink-0 mr-1">
+        <a
+          href="https://freenetproject.org/"
+          rel="noopener"
+          class="btn btn-primary mt-1 mr-1">
+          <i class="fas fa-external-link-alt fa-fw"></i>
+          Website
+        </a>
+        
+          <a
+            href="https://forum.privacytools.io/t/discussion-freenet/1591"
+            rel="noopener"
+            class="btn btn-success mt-1 mr-1">
+            <i class="fab fa-discourse fa-fw"></i>
+            Forum
+          </a>
+        
+        
+        
+      </div>
+
+      <div class="mt-2">
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#windows" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-windows fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#os-x" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-macos fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#gnulinux-posix" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-linux fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#gnulinux-posix" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="fab fa-freebsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#gnulinux-posix" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-openbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+            
+              <a href="https://freenetproject.org/pages/download.html#gnulinux-posix" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+                <i class="ptio-netbsd fa-2x fa-fw d-inline pr-1"></i>
+              </a>
+            
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+          
+
+          
+            <a href="https://github.com/freenet/" rel="noopener" class="text-decoration-none hover-text-decoration-none">
+              <i class="fab fa-github fa-2x fa-fw d-inline"></i>
+            </a>
+          
+
+          
+
+          
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<h3>Worth Mentioning</h3>
+
+<ul>
+  <li><a href="https://zeronet.io/">ZeroNet</a> - Open, free, and uncensorable websites, using Bitcoin cryptography and BitTorrent network. <span class="badge badge-danger" data-toggle="tooltip" title="Your IP address isn't hidden by default and won't be, unless you enforce Tor usage.">privacy warning <span class="far fa-question-circle"></span></span></li>
+  <li><a href="https://retroshare.cc/">RetroShare</a> - An open source, cross-platform, friend-to-friend, secure, and decentralized communication platform.</li>
+  <li><a href="https://i2pbote.xyz/">I2P-Bote</a> - End-to-end encrypted decentralized mail system within the I2P network.</li>
+  <li><a href="https://gnunet.org/">GNUnet</a> - GNUnet provides a strong foundation of free software for a global, distributed network that provides security and privacy.</li>
+  <li><a href="https://ipfs.io/">IPFS</a> <em>and</em> <a href="https://github.com/ipfs-shipyard/ipfs-companion">IPFS Companion</a>- A peer-to-peer hypermedia protocol to make the web faster, safer, and more open. IPFS Companion is a browser extension for redirecting queries to a gateway of your choice (generally local). <a href="https://github.com/privacytoolsIO/privacytools.io/pull/361#issuecomment-344414022">
+    <span class="badge badge-danger" data-toggle="tooltip" title="">
+    <span class="fas fa-exclamation-triangle"></span>
+        Important privacy warning
+      </span>
+          </a></li>
+  <li><a href="https://yggdrasil-network.github.io/">Yggdrasil</a> - An early-stage implementation of a fully end-to-end encrypted IPv6 network. It is lightweight, self-arranging, supported on multiple platforms, and allows pretty much any IPv6-capable application to communicate securely with other Yggdrasil nodes. Yggdrasil does not require you to have IPv6 Internet connectivity - it also works over IPv4. <span class="badge badge-warning" data-toggle="tooltip" title="The project is currently in early stages but it is being actively developed.">experimental <i class=\"far fa-question-circle\"></i></span> <span class="badge badge-danger" data-toggle="tooltip" title="Yggdrasil doesn't have a goal of providing anonymity and your peers know your IP address unless you are only using Tor/I2P peers.">privacy warning <i class="far fa-question-circle"></i></span></li>
+</ul>
+
+
+<h3>Related Information</h3>
+
+<ul>
+  <li><a href="https://darknetdiaries.com/">darknetdiaries.com</a> - True stories from the dark side of the Internet.</li>
+</ul>
+
+
+  </main>
+  <footer>
+  <footer>
+
+  <hr class="footer-divider" />
+
+  <h3 id="participate">分享并帮助你的朋友们</h3>
+
+  <div class="row mb-4">
+    <div class="col-12 col-md-6 d-flex justify-content-between">
+      <a href="mailto:?subject=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&body=https://www.privacytools.io/" class="share-btn email" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.privacytools.io" class="share-btn facebook" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://twitter.com/share?text=Knowledge%20and%20tools%20to%20protect%20your%20privacy%20against%20global%20mass%20surveillance%20&amp;url=https://www.privacytools.io/&amp;via=privacytoolsIO" class="share-btn twitter" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <a href="https://sharetomastodon.github.io/?title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&url=https://www.privacytools.io" class="share-btn mastodon" title="Mastodon">
+        <i class="fab fa-mastodon"></i>
+      </a>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-between">
+      <a href="https://reddit.com/submit?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn reddit" title="reddit">
+        <i class="fab fa-reddit-alien"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/shareArticle?url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn linkedin" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://mix.com/mixit?su=submit&url=https://www.privacytools.io&title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance" class="share-btn mix" title="Mix">
+        <i class="ptio-mix"></i>
+      </a>
+
+      <a href="https://sharetodiaspora.github.io/?title=privacytools.io%20-%20encryption%20against%20global%20mass%20surveillance&url=https://www.privacytools.io" class="share-btn diaspora" title="Diaspora*">
+        <i class="fas fa-asterisk"></i>
+      </a>
+    </div>
+  </div>
+
+  <h3>复制 URL 及其描述</h3>
+
+  <p>
+  <input type="text" value="PrivacyTools - 加密和对抗全球大规模监控的工具 - https://www.privacytools.io" class="form-control input-lg onclick-select">
+  <span class="help-block">分享这段文本，它方便复制和粘贴。</span>
+  </p>
+
+  <hr class="footer-divider" />
+
+  <div class="row mt-3">
+    <div class="col-sm-4 mb-3 d-flex justify-content-center align-items-center">
+      <span class="fab fa-creative-commons-zero fa-2x mr-2"></span>
+      <a
+        href="/LICENSE.txt"
+        title="This work is free. You can redistribute it and/or modify it under the terms of the &quot;Creative Commons CC0 1.0 Universal Public Domain Dedication&quot;."
+        data-toggle="tooltip"
+        data-placement="top">
+        CC0
+      </a>
+    </div>
+
+    <div class="col-sm-4 mb-3 d-flex justify-content-center align-items-center">
+      <span class="far fa-address-card fa-2x mr-2"></span>
+      <a href="/about/">关于我们</a>
+    </div>
+
+    <div class="col-sm-4 mb-3 d-flex justify-content-center align-items-center">
+      <span class="fas fa-donate fa-2x mr-2"></span>
+      <a href="/donate/" data-toggle="tooltip" data-placement="top" data-original-title="Please support this project by donating. We are ad-free and not affiliated with any providers. Your donation will cover our costs for servers and domains.">支持我们！</a>
+    </div>
+  </div>
+
+  <div class="copyright-text">
+    <a href="/about/javascript" data-jslicense="1">
+      <span class="fab fa-js fa-lg"></span>
+      JavaScript 许可证
+    </a>
+    <p class="mt-2">
+      <strong>无广告、无谷歌分析、无附属机构、无跨站请求。</strong>
+      <em>PrivacyTools 是一个以社会为导向的网站，它提供了保护数据安全与隐私的信息。永远不要用自己的隐私去信任任何公司，永远加密。</em>
+    </p>
+    <p class="text-left">
+      Tor v3: <strong>privacy2zbidut4m4jyj3ksdqidzkw3uoip2vhvhbvwxbqux5xy5obyd.onion</strong>
+      （<a href="https://write.privacytools.io/jonah/tor-on-privacytools-io">了解更多</a>）
+    </p>
+    <small>
+      <a href="/privacy/">隐私申明</a> |
+      <a href="/notices/">告示&amp;免责申明</a> |
+      <a href="https://github.com/privacytoolsIO/brand">品牌资产&amp;指导方针</a>
+    </small>
+
+  </div>
+</footer>
+
+  </footer>
+</div>
+  <script src="/assets/js/jquery-3.3.1.min.js?v=4"></script>
+<script src="/assets/js/popper.min.js?v=4"></script>
+<script src="/assets/js/bootstrap.min.js?v=4"></script>
+<script src="/assets/js/sortable.min.js?v=4"></script>
+<script src="/assets/js/main.js?v=5"></script>
+
+<!--
+  Matomo is the leading open-source analytics platform:
+  - Free open-source software
+  - 100% data ownership
+  - User privacy protection
+-->
+
+<noscript><img src="https://stats.privacytools.io/matomo.php?idsite=1&amp;rec=1" class="border-0" alt=""/></noscript>
+
+</body>
+</html>
