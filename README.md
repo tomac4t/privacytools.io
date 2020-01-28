@@ -11,10 +11,10 @@ index.html:64: (po4a::xml)
                wrong.
 ```
 ## Building
-1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/): `apt install ruby ruby-dev`
 1. Install [bundler](https://bundler.io/) by running `gem install bundler`.
-1. Run `bundle install` to install the required dependencies.
-1. Use `bundle exec jekyll build` to build the website. The output can be found in the `_site` directory.  Live preview is also possible by running `bundle exec jekyll serve`
+1. Run `bundle install --path ~/bundle/install/` to install the required dependencies.
+1. Use `bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll build` to build the website. The output can be found in the `_site` directory.  Live preview is also possible by running `bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll serve`
 
 ## Using the relative path
 ```
