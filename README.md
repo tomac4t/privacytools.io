@@ -79,7 +79,7 @@ git clone -b pages --single-branch https://github.com/tomac4t/privacytools.io.gi
     - teamchat.html
     - voice-video-messenger.html
     - vpn.html
-    - warrant-canary.html
+    - ~warrant-canary.html~
     - windows10.html
   - ~footer.html~
   - ~nav.html~
