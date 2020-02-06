@@ -58,7 +58,7 @@ git clone -b pages --single-branch https://github.com/tomac4t/privacytools.io.gi
     - ~header.html~
     - hosting-provider.html
     - instant-messenger.html
-    - key-disclosure-law.html
+    - ~key-disclosure-law.html~
     - live-operating-systems.html
     - mobile-operating-systems.html
     - notebooks.html
