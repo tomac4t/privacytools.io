@@ -1,6 +1,6 @@
 # PrivacyTools Simplified Chinese Translation
 
-This Chinese translation is base on [`f0f37b`](https://github.com/tomac4t/privacytools-zh/tree/ee03264051120cfb46fb9f54144552d262f0f37b).
+This Chinese translation is base on [`f0f37b`](https://github.com/tomac4t/privacytools.io/tree/ee03264051120cfb46fb9f54144552d262f0f37b).
 
 ## Why don't use po4a
 The problem of po4a: [po4a](https://github.com/mquinson/po4a) is a great tool to manage the origin text and the translation. It support the `xhtml` format. In my experience, it doesn't support HTML5 properly, so I have to give up:
@@ -11,13 +11,16 @@ index.html:64: (po4a::xml)
                wrong.
 ```
 ## Building
-1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/): `apt install ruby ruby-dev`
-1. Install [bundler](https://bundler.io/) by running `gem install bundler`.
-1. Run `bundle install --path ~/bundle/install/` to install the required dependencies.
-1. Use `bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll build` to build the website. The output can be found in the `_site` directory.  Live preview is also possible by running `bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll serve`
+```bash
+apt install ruby ruby-dev; # Install Ruby
+gem install bundler; # Install bundler
+bundle install --path ~/bundle/install/; # Install the required dependencies
+bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll build; # Build the website
+bundle exec ~/bundle/install/ruby/2.5.0/bin/jekyll serve; # Live preview
+```
 
 ## Using the relative path
-```
+```bash
 cd _site
 sed -i s/'href="\/'/'href=".\/'/g `find -mindepth 1 -maxdepth 1 -name "*.html"`
 sed -i s/'href="\/'/'href="..\/'/g `find -mindepth 2 -maxdepth 2 -name "*.html"`
@@ -29,7 +32,7 @@ sed -i s/'src="\/'/'src="..\/..\/'/g `find -mindepth 3 -maxdepth 3 -name "*.html
 
 ## Clone the generated pages only
 ```
-git clone -b pages --single-branch https://github.com/tomac4t/privacytools-zh.git
+git clone -b pages --single-branch https://github.com/tomac4t/privacytools.io.git
 ```
 
 ## Pages need to be translated
@@ -82,14 +85,15 @@ git clone -b pages --single-branch https://github.com/tomac4t/privacytools-zh.gi
   - ~nav.html~
 - pages
   - about.html (exclude)
-  - donate.html (exclude)
-  - notices.md (exclude)
-  - old.html
+  - ~browsers.html~
+  - ~donate.html~
+  - ~notices.md~ (exclude)
+  - ~old.html~
   - os.html
-  - privacy.md (exclude)
-  - providers.html 
-  - services.html
-  - software.html
+  - ~privacy.md~ (exclude)
+  - ~providers.html~ 
+  - ~services.html~
+  - ~software.html~
   - sponsors.html 
     - providers 
       - dns.html
