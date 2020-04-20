@@ -1,8 +1,4 @@
-name: Jekyll CI
-
-# A solution for "No GitHub API authentication" error:
-# https://github.com/github/pages-gem/issues/399
-github: [metadata]
+name: Jekyll site CI
 
 on: [push]
 

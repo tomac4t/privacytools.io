@@ -1,4 +1,4 @@
-# PrivacyTools Simplified Chinese Translation ![Jekyll site CI](https://github.com/tomac4t/privacytools.io/workflows/Jekyll%20site%20CI/badge.svg) 
+# PrivacyTools Simplified Chinese Translation
 
 This Chinese translation is base on [`f0f37b`](https://github.com/tomac4t/privacytools.io/tree/ee03264051120cfb46fb9f54144552d262f0f37b).
 
